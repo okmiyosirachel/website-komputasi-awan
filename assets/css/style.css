@@ -1,7 +1,7 @@
 
 /* =================================
    MODERN TEAL ACADEMIC PORTFOLIO
-   Color Update Only
+   Complete Color & Button Update
 ================================= */
 
 :root {
@@ -142,38 +142,60 @@ a {
     color: var(--muted);
 }
 
+/* HERO BUTTONS - MODERN DESIGN */
+
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 15px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 12px 22px;
-    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 25px;
+    border-radius: 10px;
     font-size: 14px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
+/* PELAJARI MATERI */
+
 .btn-primary {
-    background: var(--primary);
-    color: var(--white);
+    background: linear-gradient(135deg, #0F766E, #14B8A6);
+    color: #ffffff;
+    border: 1px solid #0F766E;
+    box-shadow: 0 6px 15px rgba(15, 118, 110, 0.20);
 }
 
 .btn-primary:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
+    background: linear-gradient(135deg, #115E59, #0F766E);
+    box-shadow: 0 9px 22px rgba(15, 118, 110, 0.28);
+    transform: translateY(-3px);
 }
 
+/* LIHAT PORTOFOLIO */
+
 .btn-outline {
-    border: 1px solid var(--primary);
-    color: var(--primary);
+    background: #ffffff;
+    color: #0F766E;
+    border: 1px solid #99D5CD;
+    box-shadow: 0 4px 12px rgba(15, 118, 110, 0.06);
 }
 
 .btn-outline:hover {
-    background: var(--primary-light);
+    background: #CCFBF1;
+    border-color: #0F766E;
+    box-shadow: 0 7px 18px rgba(15, 118, 110, 0.12);
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(0);
 }
 
 /* PROFILE IMAGE */
@@ -525,7 +547,8 @@ a {
     background: var(--primary-dark);
 }
 
-/* Tampilan HP */
+/* TAMPILAN HP */
+
 @media (max-width: 768px) {
     .portfolio-grid {
         grid-template-columns: 1fr;

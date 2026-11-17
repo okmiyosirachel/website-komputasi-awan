@@ -5,14 +5,14 @@
 ================================= */
 
 :root {
-    --primary: #2563eb;
-    --primary-dark: #1e40af;
-    --primary-light: #dbeafe;
-    --background: #f8fbff;
+    --primary: #0f766e;
+    --primary-dark: #134e4a;
+    --primary-light: #ccfbf1;
+    --background: #f0fdfa;
     --white: #ffffff;
-    --text: #172554;
+    --text: #134e4a;
     --muted: #64748b;
-    --border: #e2e8f0;
+    --border: #ccfbf1;
 }
 
 * {
@@ -190,7 +190,7 @@ a {
     object-fit: cover;
     border-radius: 25px;
     border: 7px solid var(--white);
-    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15);
+    box-shadow: 0 15px 40px rgba(15, 118, 110, 0.15);
 }
 
 /* ABOUT SECTION */
@@ -265,7 +265,7 @@ a {
 /* FOOTER */
 
 .footer {
-    background: #172554;
+    background: #134e4a;
     color: var(--white);
     text-align: center;
     padding: 25px;
@@ -273,7 +273,7 @@ a {
 
 .footer p {
     font-size: 13px;
-    color: #cbd5e1;
+    color: #ccfbf1;
 }
 
 /* RESPONSIVE */
@@ -326,7 +326,7 @@ a {
 ================================= */
 
 .page-header {
-    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    background: linear-gradient(135deg, #134e4a, #0f766e);
     color: white;
     text-align: center;
     padding: 75px 25px;
@@ -340,7 +340,7 @@ a {
 .page-header p {
     max-width: 650px;
     margin: auto;
-    color: #dbeafe;
+    color: #ccfbf1;
     font-size: 15px;
 }
 
@@ -385,7 +385,7 @@ a {
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.10);
+    box-shadow: 0 12px 30px rgba(15, 118, 110, 0.10);
 }
 
 .service-number {
@@ -487,7 +487,7 @@ a {
     background: #ffffff;
     padding: 28px;
     border-radius: 15px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--border);
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
     transition: 0.3s ease;
 }
@@ -498,13 +498,13 @@ a {
 }
 
 .portfolio-card h3 {
-    color: #1e40af;
+    color: var(--primary-dark);
     font-size: 20px;
     margin-bottom: 15px;
 }
 
 .portfolio-card p {
-    color: #64748b;
+    color: var(--muted);
     font-size: 15px;
     line-height: 1.7;
     margin-bottom: 22px;
@@ -512,7 +512,7 @@ a {
 
 .portfolio-link {
     display: inline-block;
-    background: #2563eb;
+    background: var(--primary);
     color: #ffffff;
     padding: 11px 20px;
     border-radius: 8px;
@@ -522,7 +522,7 @@ a {
 }
 
 .portfolio-link:hover {
-    background: #1e40af;
+    background: var(--primary-dark);
 }
 
 /* Tampilan HP */
@@ -535,4 +535,3 @@ a {
         padding: 22px;
     }
 }
-
